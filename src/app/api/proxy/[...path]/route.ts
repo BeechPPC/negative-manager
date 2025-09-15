@@ -2,10 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { path: string[] } }
+  { params }: { params: Promise<{ path: string[] }> }
 ) {
   try {
-    const { path } = params;
+    const { path } = await params;
     const { searchParams } = new URL(request.url);
     
     // Construct the target URL
@@ -48,10 +48,10 @@ export async function GET(
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { path: string[] } }
+  { params }: { params: Promise<{ path: string[] }> }
 ) {
   try {
-    const { path } = params;
+    const { path } = await params;
     const { searchParams } = new URL(request.url);
     
     // Construct the target URL
