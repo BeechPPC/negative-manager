@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Negative Keyword Manager",
   description: "Comprehensive negative keyword management system for Google Ads",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
