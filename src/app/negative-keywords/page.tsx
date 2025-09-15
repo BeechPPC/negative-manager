@@ -116,9 +116,9 @@ export default function NegativeKeywordsPage() {
             <div className="p-6">
               <h2 className="text-lg font-medium text-gray-900 mb-4">Negative Keywords Data</h2>
               <div className="text-sm text-gray-600">
-                <p>Campaign keywords: {negativeKeywordsData.campaign?.length || 0}</p>
-                <p>Ad Group keywords: {negativeKeywordsData.adGroup?.length || 0}</p>
-                <p>Shared keywords: {negativeKeywordsData.shared?.length || 0}</p>
+                <p>Campaign keywords: {negativeKeywordsData.data?.campaign?.length || 0}</p>
+                <p>Ad Group keywords: {negativeKeywordsData.data?.adGroup?.length || 0}</p>
+                <p>Shared keywords: {negativeKeywordsData.data?.shared?.length || 0}</p>
               </div>
             </div>
           </div>
